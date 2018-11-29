@@ -1,29 +1,7 @@
-# README #
+# Near #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+[![Near](https://i.imgur.com/294Y0Vh.png)](https://youtu.be/dmG_5AJobyU "Project Lagom")
 
-### What is this repository for? ###
+Bachelor Degree Final Thesis’ project aimed to improve the accessibility in public spaces, specially focused in public transport, by using Beacons and an iPhone App. 
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+The user can download information, named Service, regarding some area or place (train stations, bus stops, an airport) so the App can detect the Beacons linked to that Service and notify the user with very specific information about where is the user located or what is around him/her. For example, if the user downloads a Service of a train service, the App will notify the user when detecting a related Beacon in the train platform which platform is he/she at, lines calling at that platform and time left for the next train.
