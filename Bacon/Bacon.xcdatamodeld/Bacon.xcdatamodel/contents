@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BeaconDetails" representedClassName="BeaconDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="serviceProviderDetail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceProviderMajor" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="serviceProviderMinor" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="serviceProviderNotification" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="beaconGenericInformation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BeaconIdentifier" inverseName="beaconDetailedInformation" inverseEntity="BeaconIdentifier" syncable="YES"/>
+    </entity>
+    <entity name="BeaconIdentifier" representedClassName="BeaconIdentifier" syncable="YES" codeGenerationType="class">
+        <attribute name="serviceProviderActivated" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="serviceProviderLogo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceProviderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serviceProviderUUID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="beaconDetailedInformation" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BeaconDetails" inverseName="beaconGenericInformation" inverseEntity="BeaconDetails" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BeaconDetails" positionX="-18" positionY="-13" width="162" height="120"/>
+        <element name="BeaconIdentifier" positionX="-324" positionY="-79" width="162" height="120"/>
+    </elements>
+</model>
